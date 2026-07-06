@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.barra-celeste{
+  width:100%;
+  background-color:#C6EFFF;
+  height:35px;
+}
+
+.main-header{
+  background-color:#38c5f8;
+  width:100%;
+  padding:15px 40px;
+}
+
+.header-container{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo img{
+  height:30px;
+  display:block;
+}
+
+.navigation ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.navigation a{
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:14px;
+  letter-spacing:.5px;
+  transition:opacity .3s ease;
+}
+
+.navigation a:hover{
+  opacity:.8;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.contenedor-principal {
+    max-width: 1661px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.barra-navegacion {
+    width: 100%;
+}
+
+.fondo-barra-superior {
+    height: 63px;
+    background-color: #C6EFFF;
+}
+
+.navegacion-principal {
+    height: 96px;
+    background-color: #4AD1FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 50px;
+}
+
+.imagen-logo {
+    height: 45px;
+    display: block;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+}
+
+.elemento-navegacion {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.elemento-navegacion:hover, .elemento-navegacion.activo {
+    opacity: 0.85;
+}
+
+.banner-noticias {
+    width: 100%;
+    height: 567px;
+    background-image: url('fotos/banner.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-noticias::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: inherit;
+    filter: blur(28px);
+    transform: scale(1.05);
+    z-index: 1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.banner-noticias::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.contenido-banner {
+    position: relative;
+    max-width: 1621px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-banner {
+    font-weight: 700;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-top: 200px;
+}
+
+.barra-herramientas {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    gap: 21px;
+}
+
+.filtro-desplegable, .barra-busqueda {
+    background: rgba(217, 217, 217, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    color: #FFFFFF;
+}
+
+.filtro-desplegable { width: 135px; }
+.barra-busqueda { width: 203px; }
+
+.texto-filtro, .texto-busqueda {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.texto-busqueda {
+    white-space: nowrap;
+}
+
+.icono-interior {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.cuadricula-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 30px;
+    margin-bottom: 70px;
+}
+
+.tarjeta-noticia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 342px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
+
+.cuerpo-tarjeta {
+    width: 100%;
+    text-align: left;
+}
+
+.titulo-tarjeta {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: #000000;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.extracto-tarjeta {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #000000;
+}
+
+
+.contenedor-paginacion {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.boton-cargar-mas {
+    width: 265px;
+    height: 60px;
+    background-color: #4AD1FF;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.boton-cargar-mas:hover {
+    background-color: #31beed;
+}
+
+.pie-pagina-principal {
+    width: 100%;
+    background-color: #252728;
+    padding: 60px 0 30px 0;
+}
+
+.contenedor-pie {
+    max-width: 1621px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contenido-pie {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.columna-pie {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.encabezado-pie {
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+
+.enlaces-pie {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 0;
+}
+
+.enlaces-pie li,
+.enlaces-pie li a,
+.inferior-pie a,
+.inferior-pie span,
+.texto-social,
+.iconos-social a {
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.enlaces-pie li a,
+.inferior-pie a {
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.enlaces-pie li a:hover,
+.inferior-pie a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.inferior-pie {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-legal {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-legal a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu-legal a:hover {
+    text-decoration: underline;
+}
+
+.contenedor-social {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.texto-social {
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.iconos-social {
+    display: flex;
+    gap: 20px;
+}
+
+.iconos-social a {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.iconos-social a:hover {
+    transform: scale(1.15);
+}
